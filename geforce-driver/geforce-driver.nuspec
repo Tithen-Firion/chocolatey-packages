@@ -6,7 +6,7 @@
     <version>1.0</version>
     <authors>NVIDIA</authors>
     <owners>Tithen-Firion</owners>
-    <iconUrl>https://rawgit.com/aronovgj/chocolatey/49602c5025372cf63d1db2ae423105dca821dee3/icons/nvidia.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Tithen-Firion/chocolatey-packages/master/icons/geforce-driver.png</iconUrl>
         <summary>NVIDIA Geforce Driver</summary>
     <description>Automatically detects and installs most up-to-date NVIDIA GeForce driver for your graphics card.
 ### Important note
