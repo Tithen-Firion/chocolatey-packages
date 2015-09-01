@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>geforce-driver</id>
+    <title>Geforce Driver</title>
+    <version>1.0</version>
+    <authors>NVIDIA</authors>
+    <owners>Tithen-Firion</owners>
+    <iconUrl>https://rawgit.com/aronovgj/chocolatey/49602c5025372cf63d1db2ae423105dca821dee3/icons/nvidia.png</iconUrl>
+        <summary>NVIDIA Geforce Driver</summary>
+    <description>Automatically detects and installs most up-to-date NVIDIA GeForce driver for your graphics card.
+### Important note
+Always install with `--force` parameter -- this package doesn't contain any driver URL. It searches for newest non-beta driver for your graphics card on NVIDIA webpage. That's why package version will be updated only with fixes.
+### Package parameters
+The following package parameters can be set:
+- `nogfexp` - do not install GeForce Experience
+- `clean` - performs clean installation (removes previous drivers, settings, profiles, GeForce Experience) -- **NOT WORKING PROPERLY**  
+Installer returns error code `1`, Chocolatey throws error and nothing is installed at this time. After reboot silent installation continues and there is no information on success -- you can check if driver is installed in Control Panel -> Programs and Functions (it may take a while, screen can blink few times).
+
+These parameters can be passed to the installer with the use of `--params`.  
+For example: `--params "nogfexp"`.</description>
+    <projectUrl>http://www.nvidia.com/Download/index.aspx?lang=en-us</projectUrl>
+    <tags>graphics card driver geforce nvidia</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\*.ps1" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
