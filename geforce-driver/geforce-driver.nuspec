@@ -23,6 +23,9 @@ For example: `--params "nogfexp"`.</description>
     <licenseUrl>http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes></releaseNotes>
+    <dependencies>
+      <dependency id="powershell" version="3.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\*.ps1" target="tools" />
