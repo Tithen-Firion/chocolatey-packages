@@ -3,10 +3,6 @@ $fileType = 'exe'
 $silentArgs = '-s -noreboot'
 $packageParameters = $env:chocolateyPackageParameters
 
-if ($packageParameters -like '*clean*') {
-  $silentArgs += ' -clean'
-}
-
 $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 Import-Module (Join-Path $scriptDir "functions.ps1")
 

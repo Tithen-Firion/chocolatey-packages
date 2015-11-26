@@ -10,12 +10,10 @@
         <summary>NVIDIA Geforce Driver</summary>
     <description>Automatically detects and installs most up-to-date NVIDIA GeForce driver for your graphics card.
 ### Important note
-Always install with `--force` parameter -- this package doesn't contain any driver URL. It searches for newest non-beta driver for your graphics card on NVIDIA webpage. That's why package version will be updated only with fixes.
+Always install with `--force` parameter - this package doesn't contain any driver URL. It searches for newest non-beta driver for your graphics card on NVIDIA webpage. That's why package version will be updated only with fixes.
 ### Package parameters
 The following package parameters can be set:
 - `nogfexp` - do not install GeForce Experience
-- `clean` - performs clean installation (removes previous drivers, settings, profiles, GeForce Experience) -- **NOT WORKING PROPERLY**  
-Installer returns error code `1`, Chocolatey throws error and nothing is installed at this time. After reboot silent installation continues and there is no information on success -- you can check if driver is installed in Control Panel -> Programs and Functions (it may take a while, screen can blink few times).
 
 These parameters can be passed to the installer with the use of `--params`.  
 For example: `--params "nogfexp"`.</description>
