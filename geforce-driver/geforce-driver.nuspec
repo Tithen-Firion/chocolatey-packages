@@ -24,7 +24,7 @@ For example: `--params "nogfexp"`.</description>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes></releaseNotes>
     <dependencies>
-      <dependency id="powershell" version="3.0" />
+      <dependency id="powershell" version="[3,4)" />
     </dependencies>
   </metadata>
   <files>
